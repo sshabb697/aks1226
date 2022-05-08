@@ -3,7 +3,7 @@ provider "azurerm" {
   features {}
 }
 
-# Create a resource group if it doesn't exist
+# read existing rg
 data "azurerm_resource_group" "rg" {
   name = var.resource_group_name
 }
